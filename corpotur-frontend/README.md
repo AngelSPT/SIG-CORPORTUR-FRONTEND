@@ -6,3 +6,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- Luego de bajar el proyecto del repositorio y estar ubicado en la carpeta "corpotur-frontend" realizar  npm install (en la consola)
+
+- Para levantar el proyecto: npm run dev (en la consola)
