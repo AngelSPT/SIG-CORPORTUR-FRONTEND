@@ -2,6 +2,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.6.12",
     "@popperjs/core": "^2.11.8",
+    "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "fullcalendar": "^6.1.15"
   }

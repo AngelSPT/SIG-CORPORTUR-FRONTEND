@@ -156,7 +156,11 @@
         }
     </Style>
 </head>
-<body>
+<body onload="loader();">
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./src/recipes.api.js"></script>
+
      <!--Navbar-->
      <header class="navbar">
         <div class="upContainer-navbar d-flex justify-content-around " style="margin-left:6%;">
@@ -209,64 +213,9 @@
         
     
     <!--Information-->
-    <div class="content" style="margin-top: 4%; margin-bottom: 10%;">
-        <div class="card" style="cursor: pointer;">
-            <div class="card-body d-flex justify-content-between">
-                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
-                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
-                        <img src="./src/img/pasteldechucho.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
-                    </div>
-                    <div class="info" style="margin-left: 3%;">
-                        <h4><b>Pastel de Chucho</b></h4>
-                        <p style="font-size: 12px; ">Una especialidad de la isla que consiste en capas de chucho (raya) cocido y sazonado, intercaladas con plátano maduro frito y cubiertas con queso rallado.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="cursor: pointer;">
-            <div class="card-body d-flex justify-content-between">
-                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
-                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
-                        <img src="./src/img/ceviche.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
-                    </div>
-                    <div class="info" style="margin-left: 3%;">
-                        <h4><b>Ceviche Margariteño</b></h4>
-                        <p style="font-size: 12px; ">
-                            Un plato que destaca por su frescura y sabor, hecho con pescado fresco marinado en jugo de limón, cebolla, ají dulce, cilantro y un toque de ajo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="cursor: pointer;">
-            <div class="card-body d-flex justify-content-between">
-                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
-                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
-                        <img src="./src/img/piñonate.jpeg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
-                    </div>
-                    <div class="info" style="margin-left: 3%;">
-                        <h4><b>Piñonate</b></h4>
-                        <p style="font-size: 12px; ">Un sabroso y tradicional dulce margariteño hecho con lechosa verde, melao de papelón y concha de naranja cajera.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="cursor: pointer;">
-            <div class="card-body d-flex justify-content-between">
-                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
-                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
-                        <img src="./src/img/pasteldechucho.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
-                    </div>
-                    <div class="info" style="margin-left: 3%;">
-                        <h4><b>Pastel de Chucho</b></h4>
-                        <p style="font-size: 12px; ">Una especialidad de la isla que consiste en capas de chucho (raya) cocido y sazonado, intercaladas con plátano maduro frito y cubiertas con queso rallado.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="content" style="margin-top: 4%; margin-bottom: 10%;" id="lasrecetas">
+        
+        
         
         
        
@@ -308,5 +257,5 @@
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <scripts src="./js/bootstrap.bundle.min.js"></script>
-</body>
+</scripbody>
 </html>
