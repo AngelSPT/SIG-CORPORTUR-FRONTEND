@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocinaInsular</title>
+    <link rel="shortcut icon" href="./src/img/logo-blanco.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <Style>
+        @font-face {
+        font-family: Inter;
+        src: url(./fonts/static/Inter_18pt-Regular.ttf);
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F2CD88;
+            color: #003F5E;
+        }
+        .navbar{
+            background-color: #003F5E;
+        }
+        .search{
+            padding: 13px;
+            padding-right: 35px;
+            border-radius: 12px 0 0 12px;
+            border: 0;
+            outline: none;
+            height: 55px;
+            width: 680px;
+        }
+        .btnSearch{
+            position: absolute;
+            padding: 8px;
+            border-radius: 0 12px 12px 0;
+            height: 55px;
+            width: 75px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .car-shop{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+        }
+        .user{
+            width: 40px;
+            height: 45px;
+            cursor:pointer;
+        }
+        .chevron-down{
+            width: 30px;
+            height: 25px;
+            margin-top: 5px;
+            cursor:pointer;          
+        }
+
+        .logo-container{
+            margin-left: 75px;
+            margin-right: 45px;
+        }
+        .search-container{
+            margin-right: 90px;
+            margin-left: 10px;
+            margin-top: 2.2%;
+        }
+        .btn-container{
+            margin-left: 80px;
+            margin-top: 3.6%;
+        }
+        .log{
+            color: #FFFFFF;
+            text-decoration: none;
+           
+        }
+        .log:hover{
+            color: #c4c5c5;
+            transition: background-color 0.5s ease-in-out, transform 0.3s ease-in;
+
+        };
+        
+        .car-shop{
+            margin-right: 35px;
+        }
+        .nav-link{
+            color:white;
+            margin-left: 60px;
+            margin-right: 5px;
+            
+        }
+        .nav-link2{
+            color:white;
+            text-decoration: none;
+            
+        }
+        .nav-link2:hover{
+            color: grey;
+        }
+        .nav-link:hover{
+            color:grey;
+        }
+        .card{
+            width: 23%;
+            height: 350px;
+            text-align: left;
+            transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+        }
+        .card-body{
+            cursor: pointer;
+        }
+        .flyer{
+            height: 290px;
+        }
+        .text-flyer{
+            position: relative;
+            color: #FFFFFF;
+            bottom: 200px;
+            margin-left: 120px;
+        }
+        .card-msg{
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            margin-right: 100px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .card-msg2{
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            margin-right: 100px;
+            margin-left: 100px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            height: 417px;
+        }
+        .msgCard{
+            margin-top: 100px;
+        }
+        .msgCard2{
+            margin-top: 130px;
+            margin-left: 5%;
+        }
+        .imgCard{
+            margin-top: 50px;
+        }
+        .eventD{
+            margin-top: 80px;
+        }
+        .footer{
+            background-color: #003F5E;
+            height: 220px;
+            width: 100%;
+        }
+    </Style>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <div class="upContainer-navbar d-flex justify-content-around " style="margin-left:6%;">
+            <div class="logo-container" >
+                <img class="logo" src="./src/img/logo blanco.png" alt="logo" id="logo">
+            </div>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Buscar">
+                <button class="btn btn btn-light btnSearch" type="button"><img src="./src/img/search.svg" style="width: 25px; " alt="Buscar"></button>
+            </div>
+            <div class="btn-container d-flex justify-content-around">
+                <a href="./login.html" class="log fw-bold">Iniciar Sesión</a>
+            </div>
+        </div>
+
+        <script>
+            const logo = document.getElementById('logo');
+            logo.addEventListener('click',() => {
+                location.href = './index.html'
+            });
+        </script>
+
+        <div class="downContainer-navbar" style="margin-left: 7%;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./recetasTipicas.html">Recetas típicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./est&evn.html">Establecimientos y Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contáctanos</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>  
+    </header>
+     <!--Flyer-->
+     <div class="flyer">
+        <img src="./src/img/playita.webp" alt="" style="width: 100%; height: 290px;">
+        <div class="text-flyer">
+            <h4 class="fw-bold">DESCUBRE LOS SABORES DEL ESTADO NUEVA ESPARTA</h4>
+            <P class="mt-4" style="font-size: 18px;">Explora nuestros eventos, conoce nuestras rutas <br> o Inscríbete en nuestros cursos</P>
+        </div>
+      </div>
+
+      <!--Card intro-->
+     <div class="card-msg">
+        <div class="cardBody-msg d-flex justify-content-evenly">
+            <div class="msgCard">
+                <h4 class="fw-bold mb-4">Margarita: Un Paraíso de Sabores que Encantará Tu Paladar</h4>
+                <p style="font-size: 18px;">Descubre un mundo de sabores en la Isla de Margarita, <br>
+                    donde la tradición culinaria se fusiona con la frescura del <br>
+                     mar y la riqueza de la tierra. Nuestra isla te invita a <br> 
+                    deleitarte con una explosión de aromas y texturas que <br>
+                    harán de tu viaje una experiencia inolvidable.</p>
+            </div>
+            <div class="imgCard">
+                    <img src="./src/img/logo azul.png" alt="" style="width: 400px; height: 390px;">
+            </div>
+            
+        </div>
+     </div>
+     <!--eventos destacados-->
+     <section class="eventD">
+        <h4 class="fw-bold mb-4 " style="margin-left: 100px;">Eventos destacados</h4>
+        <div class="d-flex justify-content-around mt-3" style="margin-right: 25px; margin-left: 60px;">
+            <div class="card"> 
+                <div class="card-body">
+                    <img src="./src/img/hallaca.jpeg"  alt="..." style="width: 100%; height: 180px; border-radius: 5px;">
+                    <h6 style="margin-top: 10%; margin-bottom: 15px; font-weight: bold; color: #003F5E; font-size: 18px;">2da Feria de la Hallaca <br> Margariteña (Jorge Coll – <br>Pampatar)</h6>
+                    
+                </div>
+            </div>
+            <div class="card"> 
+                <div class="card-body">
+                    <img src="./src/img/Feria_del_Coco.jpg" alt="..." style="width: 100%;height: 180px; border-radius: 5px;">
+                    <h6 style="margin-top: 10%; margin-bottom: 30px; font-weight: bold; color: #003F5E; font-size: 18px;">Feria del Coco (Museo<br>Pueblos de Margarita -<br> Tacuantar)</h6>
+                    
+                </div>
+            </div>
+            <div class="card"> 
+                <div class="card-body">
+                    <img src="./src/img/gente.png" alt="..." style="width: 100%; height: 180px; border-radius: 5px;">
+                    <h6 style="margin-top: 10%; margin-bottom: 30px; font-weight: bold; color: #003F5E; font-size: 18px;">Porlamar gastronómico -<br> cierre de margarita<br> gastronomica</h6>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+        <!--Card intro2-->
+        <div class="card-msg2 ">
+            <div class="cardBody-msg d-flex justify-content-around">
+                <div class="msgCard2">
+                    <h4 class="fw-bold mb-4">¡Participa en los proximos eventos gastronómicos<br>
+                        y desarrolla tu emprendimiento!</h4>
+                    <button id="veteallogin" type="button" class="btn" style="margin-top: 30px; background-color: #003F5E; color: #FFFFFF; font-weight: bold; height: 50px;">Comienza a participar</button>
+                </div>
+                <div class="imgCard">
+                    <img src="./src/img/margarita gastronomica.jpg" alt="" style="width: 206px; height: 156px; border-radius: 20px;" >
+                        <img src="./src/img/corpotur.png" alt="" style="width: 217px; height: 185px; position: relative; right: 150px; top: 130px;"> 
+                </div>
+                
+            </div>
+         </div>
+
+         <script>
+            const boton = document.getElementById('veteallogin')
+            boton.addEventListener('click', ()=>{
+                location.href='./register.html'
+            })
+         </script>
+        
+        <!--footer-->
+        <footer class="footer d-flex justify-content-between">
+            <div class="left text-white mt-5" style="margin-left: 3%;">
+                <p>CocinaInsular@gmail.com</p>
+                <p>@cocinainsularoficial</p>
+                <p>Copyright © CocinaInsular 2024</p>
+            </div>
+            <div class="center mt-4">
+                <img src="./src/img/logo blanco.png" alt="" style="width: 120px; height: 120px;">
+                <div class="brands d-flex ">
+                    <img src="./src/img/logo-instagram.svg" alt="" style="width: 30px; height: 30px; margin-right: 15px;">
+                    <img src="./src/img/logo-facebook.svg" alt="" style="width: 30px; height: 30px; margin-right: 15px;">
+                    <img src="./src/img/logo-linkedin.svg" alt="" style="width: 30px; height: 30px;">
+                </div>
+            </div>
+            <div class="left mt-5 " style="margin-right: 3%;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link2" aria-current="page" href="#">Recetas típicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link2" href="#">Establecimientos y Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link2" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link2" href="#">Contáctanos</a>
+                    </li>
+                    </ul>
+            </div>
+
+        </footer> 
+
+
+
+      <script src="./js/bootstrap.min.js"></script>
+    <scripts src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

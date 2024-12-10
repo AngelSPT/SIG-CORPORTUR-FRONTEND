@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocinaInsular</title>
+    <link rel="shortcut icon" href="./src/img/logo-blanco.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+    <Style>
+        @font-face {
+        font-family: Inter;
+        src: url(./fonts/static/Inter_18pt-Regular.ttf);
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F2CD88;
+            color: #003F5E;
+        }
+        .navbar{
+            background-color: #003F5E;
+        }
+        .navbar{
+            background-color: #003F5E;
+        }
+        .search{
+            padding: 13px;
+            padding-right: 35px;
+            border-radius: 12px 0 0 12px;
+            border: 0;
+            outline: none;
+            height: 55px;
+            width: 680px;
+        }
+        .btnSearch{
+            position: absolute;
+            padding: 8px;
+            border-radius: 0 12px 12px 0;
+            height: 55px;
+            width: 75px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .car-shop{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+        }
+        .user{
+            width: 40px;
+            height: 45px;
+            cursor:pointer;
+        }
+        .chevron-down{
+            width: 30px;
+            height: 25px;
+            margin-top: 5px;
+            cursor:pointer;          
+        }
+
+        .logo-container{
+            margin-left: 70px;
+            margin-right: 45px;
+        }
+        .search-container{
+            margin-right: 80px;
+            margin-left: 10px;
+            margin-top: 2.2%;
+        }
+        .btns-container{
+            margin-left: 80px;
+            margin-top: 2.2%;
+        }
+        .car-shop{
+            margin-right: 35px;
+        }
+        .nav-link{
+            color:white;
+            margin-left: 60px;
+            margin-right: 5px;
+            
+        }
+        .nav-link:hover{
+            color:grey;
+        }
+        
+       .img-perfil{
+        background-color: #fff;
+        width: 110px;
+        height:110px;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 5px;
+        transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(148, 148, 148, 0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(148, 148, 148, 0.3);
+       }
+       .name-sections{
+        margin-right: 40%;
+        margin-top: 2%;
+        
+       }
+       a{
+        margin-right: 40px;
+        margin-bottom: 3%;
+       }
+       .card{
+        margin-left: 15%;
+        margin-right: 15%;
+       }
+       p{
+        color:#0f2226c8;
+       }
+       .content{
+        margin-top: 2%;
+       }
+       .img-edit{
+        border-color: #0F2226;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2px;
+        width: 50px;
+        height: 50px;
+        margin-right: 5%;
+        margin-top: 0.5%;
+        cursor: pointer;
+       }
+       .info-edit{
+        margin-left: 5%;
+        margin-top: 0.5;
+       }
+    </Style>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <div class="upContainer-navbar d-flex justify-content-around " style="margin-left:6%;">
+            <div class="logo-container" >
+                <img class="logo" src="./src/img/logo blanco.png" alt="logo" id="logo">
+            </div>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Buscar">
+                <button class="btn btn btn-light btnSearch" type="button"><img src="./src/img/search.svg" style="width: 25px; " alt="Buscar"></button>
+            </div>
+            <div class="btns-container d-flex justify-content-around">
+                <div class="dropdown">
+                    <img class="user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/person-outline.svg" alt="">
+                    <img class="chevron-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/chevron-down-outline.svg" alt="">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="./administrar1.html">Administrar</a></li>
+                      <li><a class="dropdown-item" href="./index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const logo = document.getElementById('logo');
+            logo.addEventListener('click',() => {
+                location.href = './index.html'
+            });
+        </script>
+
+        <div class="downContainer-navbar" style="margin-left: 7%;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./recetasTipicas.html">Recetas típicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./est&evn.html">Establecimientos y Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contáctanos</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>  
+    </header>
+    <!--PerfilNavbar-->
+    <div class="perfilNavbar bg-white d-flex">
+        <div class="name-sections" style="margin-left: 8%;">
+            <h3 style="margin-bottom: 8%;"><b>Samuel Marcano</b></h3>
+            <div class="sections d-flex">
+                <a href="./perfil.html" style="text-decoration: none; color:#003F5E">Información personal</a>
+                <a href="./perfilnegocio.html" style="text-decoration: none; border-bottom: 3px solid #498c99c4; color:#22474f"><b>Mi negocio</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Information-->
+    <div class="d-flex justify-content-around" style=" margin-top: 2%;">
+        <h4 ><b>Información del Negocio</b></h4>
+        <button class="btn btn-primary" style="background-color: #003F5E; width: 180px; height: 60px; border-color: #003F5E;" data-bs-toggle="modal" data-bs-target="#exampleModal1"><b>Curso de emprendedores</b></button>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-body d-flex justify-content-between">
+                <div class="info-edit">
+                    <h5>Nombre del negocio</h5>
+                    <p>Mi negocio de comida</p>
+                </div>
+                <div class="img-edit">
+                    <img src="./src/img/pen-to-square-solid.svg" id="editar" alt="" style="width: 25px; height: 25px; position: relative; left: 23%; top: 18%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex justify-content-between">
+                <div class="info-edit">
+                    <h5>Correo Electrónico</h5>
+                    <p>smarcano.8764@unimar.edu.ve</p>
+                </div>
+                <div class="img-edit">
+                    <img src="./src/img/pen-to-square-solid.svg" alt="" style="width: 25px; height: 25px; position: relative; left: 23%; top: 18%;">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex justify-content-between">
+                <div class="info-edit">
+                    <h5>Dirección</h5>
+                    <p>Playa el yaque</p>
+                </div>
+                <div class="img-edit">
+                    <img src="./src/img/pen-to-square-solid.svg" alt="" style="width: 25px; height: 25px; position: relative; left: 23%; top: 18%;">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex justify-content-between">
+                <div class="info-edit">
+                    <h5>Métodos de contacto</h5>
+                    <p>Número de telefono, email, encuentro físico....</p>
+                </div>
+                <div class="img-edit">
+                    <img src="./src/img/pen-to-square-solid.svg" alt="" style="width: 25px; height: 25px; position: relative; left: 23%; top: 18%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         function mostrarModal() {
+         $('#exampleModal').modal('show');
+            }
+
+        const boton = document.getElementById('editar')
+        boton.addEventListener('click', ()=>{
+           mostrarModal();
+        })
+    </script>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Información</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label>Nombre del negocio</label>
+              <input type="text" class="form-control" placeholder="Nombre y apellido" value="Mi negocio de comida">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea inscribirse en el curso de micro-empresarios?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Si le da en aceptar, la informacion personal y del negocio seran tomadas de su perfil y se realizara el proceso de inscripcion, mas informacion en el instagram de corpotur</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <scripts src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

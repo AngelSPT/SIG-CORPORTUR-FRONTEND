@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocinaInsular</title>
+    <link rel="shortcut icon" href="./src/img/logo-blanco.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <Style>
+       @font-face {
+        font-family: Inter;
+        src: url(./fonts/static/Inter_18pt-Regular.ttf);
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F2CD88;
+            color: #003F5E;
+        }
+        .navbar{
+            background-color: #003F5E;
+        }
+        .search{
+            padding: 13px;
+            padding-right: 35px;
+            border-radius: 12px 0 0 12px;
+            border: 0;
+            outline: none;
+            height: 55px;
+            width: 680px;
+        }
+        .btnSearch{
+            position: absolute;
+            padding: 8px;
+            border-radius: 0 12px 12px 0;
+            height: 55px;
+            width: 75px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .car-shop{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+        }
+        .user{
+            width: 40px;
+            height: 45px;
+            cursor:pointer;
+        }
+        .chevron-down{
+            width: 30px;
+            height: 25px;
+            margin-top: 5px;
+            cursor:pointer;          
+        }
+
+        .logo-container{
+            margin-left: 75px;
+            margin-right: 45px;
+        }
+        .search-container{
+            margin-right: 90px;
+            margin-left: 10px;
+            margin-top: 2.2%;
+        }
+        .btn-container{
+            margin-left: 80px;
+            margin-top: 3.6%;
+        }
+        .log{
+            color: #FFFFFF;
+            text-decoration: none;
+           
+        }
+        .log:hover{
+            color: #c4c5c5;
+            transition: background-color 0.5s ease-in-out, transform 0.3s ease-in;
+
+        };
+        
+        .car-shop{
+            margin-right: 35px;
+        }
+        .nav-link{
+            color:white;
+            margin-left: 60px;
+            margin-right: 5px;
+            
+        }
+        .nav-link2{
+            color:white;
+            text-decoration: none;
+            
+        }
+        .nav-link2:hover{
+            color: grey;
+        }
+        .nav-link:hover{
+            color:grey;
+        }
+        
+       .img-perfil{
+        background-color: #fff;
+        width: 110px;
+        height:110px;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 5px;
+        transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(148, 148, 148, 0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(148, 148, 148, 0.3);
+       }
+       .name-sections{
+        margin-right: 40%;
+        margin-top: 2%;
+        
+       }
+       a{
+        margin-right: 40px;
+        margin-bottom: 3%;
+       }
+       .card{
+        margin-left: 15%;
+        margin-right: 15%;
+       }
+       .content{
+        margin-top: 2%;
+       }
+       .img-edit{
+        border-color: #0F2226;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2px;
+        width: 50px;
+        height: 50px;
+        margin-right: 5%;
+        margin-top: 0.5%;
+        cursor: pointer;
+       }
+       .info-edit{
+        margin-left: 5%;
+        margin-top: 0.5;
+       }
+
+       .footer{
+            background-color: #003F5E;
+            height: 220px;
+            width: 100%;
+        }
+    </Style>
+</head>
+<body>
+     <!--Navbar-->
+     <header class="navbar">
+        <div class="upContainer-navbar d-flex justify-content-around " style="margin-left:6%;">
+            <div class="logo-container" >
+                <img class="logo" src="./src/img/logo blanco.png" alt="logo" id="logo">
+            </div>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Buscar">
+                <button class="btn btn btn-light btnSearch" type="button"><img src="./src/img/search.svg" style="width: 25px; " alt="Buscar"></button>
+            </div>
+            <div class="btn-container d-flex justify-content-around">
+                <a href="./login.html" class="log fw-bold">Iniciar Sesión</a>
+            </div>
+        </div>
+
+        <script>
+            const logo = document.getElementById('logo');
+            logo.addEventListener('click',() => {
+                location.href = './index.html'
+            });
+        </script>
+
+        <div class="downContainer-navbar" style="margin-left: 7%;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./recetasTipicas.html" style="border-bottom: 3px solid #fff; font-weight: bold;">Recetas típicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./est&evn.html">Establecimientos y Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contáctanos</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>  
+    </header>
+
+        
+    
+    <!--Information-->
+    <div class="content" style="margin-top: 4%; margin-bottom: 10%;">
+        <div class="card" style="cursor: pointer;">
+            <div class="card-body d-flex justify-content-between">
+                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
+                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
+                        <img src="./src/img/pasteldechucho.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="info" style="margin-left: 3%;">
+                        <h4><b>Pastel de Chucho</b></h4>
+                        <p style="font-size: 12px; ">Una especialidad de la isla que consiste en capas de chucho (raya) cocido y sazonado, intercaladas con plátano maduro frito y cubiertas con queso rallado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="cursor: pointer;">
+            <div class="card-body d-flex justify-content-between">
+                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
+                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
+                        <img src="./src/img/ceviche.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="info" style="margin-left: 3%;">
+                        <h4><b>Ceviche Margariteño</b></h4>
+                        <p style="font-size: 12px; ">
+                            Un plato que destaca por su frescura y sabor, hecho con pescado fresco marinado en jugo de limón, cebolla, ají dulce, cilantro y un toque de ajo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="cursor: pointer;">
+            <div class="card-body d-flex justify-content-between">
+                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
+                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
+                        <img src="./src/img/piñonate.jpeg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="info" style="margin-left: 3%;">
+                        <h4><b>Piñonate</b></h4>
+                        <p style="font-size: 12px; ">Un sabroso y tradicional dulce margariteño hecho con lechosa verde, melao de papelón y concha de naranja cajera.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="cursor: pointer;">
+            <div class="card-body d-flex justify-content-between">
+                <div class="producto d-flex" style="margin-top: 2%; margin-left: 3%; ">
+                    <div class="img-producto" style=" width: 155px; height: 120px; border-radius: 10px;">
+                        <img src="./src/img/pasteldechucho.jpg" alt="" style="width: 100%; height: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="info" style="margin-left: 3%;">
+                        <h4><b>Pastel de Chucho</b></h4>
+                        <p style="font-size: 12px; ">Una especialidad de la isla que consiste en capas de chucho (raya) cocido y sazonado, intercaladas con plátano maduro frito y cubiertas con queso rallado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+    </div>
+
+    <footer class="footer d-flex justify-content-between">
+        <div class="left text-white mt-5" style="margin-left: 3%;">
+            <p>CocinaInsular@gmail.com</p>
+            <p>@cocinainsularoficial</p>
+            <p>Copyright © CocinaInsular 2024</p>
+        </div>
+        <div class="center mt-4">
+            <img src="./src/img/logo blanco.png" alt="" style="width: 120px; height: 120px;">
+            <div class="brands d-flex ">
+                <img src="./src/img/logo-instagram.svg" alt="" style="width: 30px; height: 30px; margin-right: 15px;">
+                <img src="./src/img/logo-facebook.svg" alt="" style="width: 30px; height: 30px; margin-right: 15px;">
+                <img src="./src/img/logo-linkedin.svg" alt="" style="width: 30px; height: 30px;">
+            </div>
+        </div>
+        <div class="left mt-5 " style="margin-right: 3%;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link2" aria-current="page" href="#">Recetas típicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link2" href="#">Establecimientos y Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link2" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link2" href="#">Contáctanos</a>
+                </li>
+                </ul>
+        </div>
+
+    </footer> 
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <scripts src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
